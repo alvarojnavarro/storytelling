@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The problem that laid underwater</title>
+	<link rel="icon" type="image/png" href="favicon.gif" />
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+	<!-- FONT -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.bundle.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body>
+<!--  -->
+<!-- INTRO -->
+<!--  -->
+	<div class="hero" id="hero">
+		<div class="col-sm-9 offset-sm-1">
+			<img src="imgs/hero.png" width="100%" alt="">
+		</div>
+		<div class="col-sm-6 offset-sm-3" style="margin-top: -80px;">
+			<h1>The problem that laid underwater</h1>
+			<h3>A quick overview of Three Mile Island Accident, and how bad design made the situation worse</h3>
+			<p>The Three Mile Island power plant accident, that occurred on 1979 in the USA constituted the biggest warning –until 1986 with the Chernobyl incident– of the power that comes with nuclear energy and the potential dangers when this power is not properly managed. Mechanical failures led to a crisis that was gravely deepened by poorly designed information feeds.</p>
+		</div>
+	</div>
+
+<!--  -->
+<!-- HEADER -->
+<!--  -->
+
+	<header class="row">
+		<div class="col-10 offset-sm-1">
+			<b>The problem that laid underwater</b><br>
+			A quick overview of Three Mile Island Accident, and how bad design made the situation worse
+		</div>
+		<div class="col-1">
+			<audio id="music" preload="true" >
+				<source src="music/clock.mp3" type="audio/mpeg" />
+			</audio>
+			<div id="audioplayer">
+				<button id="pButton" class="pause"></button>
+			</div>
+		</div>
+	</header>
+
+<!--  -->
+<!-- CONTENT -->
+<!--  -->
+
+
+	<section class="swiper-container">
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+
+		<nav class="nav nav-pills nav-justified">
+			<a class="nav-item nav-link" id="nav_one" href="#one">Seconds</a>
+			<a class="nav-item nav-link" id="nav_two" href="#two">Hours I</a>
+			<a class="nav-item nav-link" id="nav_three" href="#three">Hours II</a>
+			<a class="nav-item nav-link" id="nav_four" href="#four">Days</a>
+			<a class="nav-item nav-link" id="nav_five" href="#five">Aftermath</a>
+		</nav>
+
+		<!-- Swiper content -->
+		<div class="swiper-wrapper">
+			<article class="swiper-slide" data-hash="one" id="seconds">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-10 offset-sm-1">
+							<h2>March 28</h2>
+							<h2>4:00:00 - 4:00:10 A.M.</h2>
+							<p>The series of events start at this hour – although several sources indicate that there are previous minor events which lead to this first malfunction. Be as it may, the accident began with a <b style="font-weight: 600;">blocked water pump</b>. This is the main water pump, and a block in it interferes with the removal of heat from the reactor core, thus increasing the temperature and pressure in the reactor. The system responds by turns itself off automatically, interrupting the nuclear chain reaction, but <b style="font-weight: 600;">the reactor keeps generating decay heat</b>. As pressure rises the auxiliary systems automatically open a relief valve (PORV), but because of yet <b style="font-weight: 600;">another malfunction</b> the valve remains stuck open. With this valve open, the water in the reactor is free to boil and escape as steam from the system. This escape of steam makes the pressure diminish, the systems understand that there is a leak and emergency water pumps are automatically turned on.</p>
+						</div>
+					</div>
+					
+				</div>
+			</article>
+
+			<article class="swiper-slide" data-hash="two" id="hours">
+				<div class="col-sm-12">
+					<div class="row">
+							
+						<div class="col-sm-8 offset-sm-1">
+							<h2>4:00:10 A.M.</h2>
+						</div>
+						<div class="col-sm-4 offset-sm-1">
+							<p>After this first seconds, the people in the control room are stunned. The relief valve (PORV) indicator light turns off as it usually does, telling the operators that the valve is properly closed, which as previously stated, is false. This is probably one of the most important failures of the system, for the light is supposed to indicate that the valve is either open or closed. However, the light actually is just letting the operators know that the order to open/close has been received by the valve, not the actual position of the valve. The operators are not aware of this fact and they assume that the valve is closed as it should.</p>
+
+							<img src="imgs/2-pressure.gif" width="150" style="float: right; margin-left: 1rem;" alt="">
+							<p>It never occurred to the operators, that what was going on was an important loss of cooling water. This water keeps the reactor temperature and pressure under control.</p>
+						</div>
+						<div class="col-sm-4 offset-sm-1">
+							<p>Astonishingly, another grave failure in the system shows up here: none of the indicators in the control panel tells them exactly how much water is covering the reactor. The reactor core must be underwater at all times, and with the water evaporating away the reactor will be soon exposed.</p>
+							<p>The core, also must be at specific levels of pressure, a change in this levels can be dangerous; the operators are fighting to keep the pressure stable. Since the pressure kept on rising while the emergency pumps where active, operators decide to slow down the amount of cooling water being pushed into the reactor. Much to their disgrace, a mixture of water and steam was running through the cooling pumps, creating vibrations that could be dangerous. This forced the operators to shut down the flow of cool water altogether.</p>
+							<p><a href="#three">Next hours &raquo;</a></p>
+							
+						</div>
+					</div>
+					
+				</div>
+			</article>
+
+			<article class="swiper-slide" data-hash="three" id="hours">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-8 offset-md-1">
+							<h2>06:20 A.M.</h2>
+						</div>
+						<div class="col-md-4 offset-md-1">
+							<p>The water in the reactor keeps on boiling, leaving the reactor fuel “high and dry”. Indicators in the control room show are lighting up and signaling all kinds of warnings, and since none tells the main issue the operators have spent approximately two hours trying to figure out the problem. Finally, they find out that the relief valve is stuck open so they close an emergency valve to control the situation, but still the water level in the reactor continues to drop.</p>
+							<h2>07:20 A.M.</h2>
+							<p>It is at this moment when the people in the control room realize that the reactor “might” be running low on water, so they start pumping water in it. The core will be again underwater, but it might be to late. The fuel rods have been melting throughout the morning, and are now fused together; a dense mass that keeps on heating up.</p>
+							<h2>07:45 A.M.</h2>
+							<p>Radiation levels are so high that NRC (Nuclear Regulatory Commission) regulations require the declaration of a general emergency.</p>
+						</div>
+						<div class="col-md-4 offset-md-1">
+							<p>Headquarters in Washington are notified, and inspectors are promptly dispatched with the company of teams from other agencies like the Department of Energy and the Environmental Protection Agency. Inside the core, unimaginable for everyone in or out of the power plant, is that the dense mass formed by the fuel rods continues to melt and now spills onto the bottom of the reactor vessel. This structure is not meant to hold this kind of temperature from the melted material.</p>
+							<h2>09:00 A.M.</h2>
+							<p>The spilled melted uranium, immersed in water, is gradually cooling down. The structure manages to hold it and the situation starts to stabilize.</p>
+							<img src="imgs/3-control.gif" width="100%" alt="">
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article class="swiper-slide" data-hash="four" id="days">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-2 offset-sm-1">
+							<h2>March 30</h2>
+							<p>Nuclear engineers and public health officials begin to confront the fact that the reactor sustained major damage, even thinking that there may be radiation leaking outside the facility.</p>
+							<p>NRC officials overestimate the situation and unsustained reports from this officials lead the governor of Pennsylvania to tell reporters that it may be recommendable for children and pregnant women to leave the area near TMI.</p>
+						</div>
+						<div class="col-sm-2 offset-sm-1">
+							<h2>March 31</h2>
+							<p>Unrest settles again in the plant. This time due to a Hydrogen bubble that has formed inside the the vessel where the reactor core is suspended. This hydrogen was the result of a chemical reaction produced by the mix of the melted nuclear fuel with other parts that constitute the actual nuclear reactor (the rods in which the fuel runs). If an explosion where to happen, the nuclear core could fall to the containment building ground, likely breaching it and causing a radiation leak.</p>
+						</div>
+						<div class="col-sm-2 offset-sm-1">
+							<h2>April 1</h2>
+							<p>In the following hours the experts consensus is that a hydrogen explosion is simply not possible. The size of the bubble has been greatly reduced. President Jimmy Carter visits the plants and the crisis is basically over.</p>
+							<img src="imgs/4-map-thumb.png" width="240" alt="">
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article class="swiper-slide" data-hash="five" id="aftermath">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-11 offset-sm-1">
+							<h2>Why systems like this fail?</h2>
+						</div>
+						<div class="col-sm-4 offset-sm-1">
+							<p>No human lives were directly affected by the accident, other than the stress from the operators there at that time. However, the social consequences can be seen by the increased growth of anti-nuclear power groups worldwide. Industry-wise, it took the US more than 30 years to begin building a new nuclear power plant after the TMI accident, trying to incorporate in the process all the painful lessons learnt. Any kind of human-computer should be studied and tested as much as posible. Knowing as much as posible about the user and the task is primordial in order to create succesful systems.</p>
+							<!-- <p>Instrumentation to measure the amount of water inside the reactor vessel (which was the information needed to avoid the disaster) has been created and patented, and it can run independently from the power plants, thus not interfering nor introducing it’s own independent risks into the plants' system. However, it’s implementation is ridiculous. The very NRC is advocating for water-level control instrumentation for spent-fuel ponds, not for the actual reactors, which won't help avoid future incidents like the one at TMI.</p> -->
+							<p>Several investigations attribute the accident to deficient control-room instrumentation and a faulty user-interface engineering, among poor operator training and other human factors. It took an extensive effort to improve the control rooms for the existing plants, add regulations, and pay more attention to the human-computer interaction.</p>
+						</div>
+
+						<div class="col-sm-4 ">
+							<p>The accident revealed how poorly arranged were the indicators in the control room, and how different parameters could fire warning alerts. Human factors weren’t taken into account, and therefore the information that the panel gave the operators was overwhelming and useless. It failed simply because it was not designed to be operated by humans.</p>
+							<p>There is not even the need to look that far away in the past for an example of errors thanks to poor UI in complex systems. In the third week of January of this year an operator in the Hawaii Emergency Management Agency issued a state wide alert about an incoming missile towards Hawaii. Not only the alert was false, it was a regular test, and the recall text came 38 minutes later. <b>38 minutes later.</b> <br>
+							Why? The reason is Negligence.</p>
+						</div>
+						<div class="col-sm-3">
+							<p class="credits">
+								Sources: <br>
+								<a href="http://americanhistory.si.edu/tmi/tmi05.htm">http://americanhistory.si.edu/tmi/tmi05.htm</a><br>
+								<a href="http://www.nytimes.com/gwire/2009/03/27/27greenwire-three-mile-island-still-haunts-us-reactor-indu-10327.html?pagewanted=all">http://www.nytimes.com/gwire/2009/03/27/27greenwire-three-mile-island-still-haunts-us-reactor-indu-10327.html?pagewanted=all</a><br>
+								<a href="https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/3mile-isle.html">https://www.nrc.gov/reading-rm/doc-collections/fact-sheets/3mile-isle.html</a><br>
+								<a href="https://www.nei.org/Master-Document-Folder/Backgrounders/Fact-Sheets/The-TMI-2-Accident-Its-Impact-Its-Lessons">https://www.nei.org/Master-Document-Folder/Backgrounders/Fact-Sheets/The-TMI-2-Accident-Its-Impact-Its-Lessons</a><br>
+								<a href="https://thebulletin.org/thirty-years-after-tmi-five-lessons-learned">https://thebulletin.org/thirty-years-after-tmi-five-lessons-learned</a><br>
+								<a href="https://www.aps.org/units/fps/newsletters/201301/devolpi.cfm">https://www.aps.org/units/fps/newsletters/201301/devolpi.cfm</a><br>
+								<a href="https://theoutline.com/post/2954/user-interface-designers-are-horrified-by-hawaii-s-missile-alert-system?zd=1">https://theoutline.com/post/2954/user-interface-designers-are-horrified-by-hawaii-s-missile-alert-system?zd=1</a><br>
+								Design &amp; writting by <a href="mailto:alvarojnavarro@hotmail.com">Alvaro Navarro</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+			
+		</div>
+
+    <!-- Add Arrows -->
+    <div class="swiper-button swiper-button-next"></div>
+    <div class="swiper-button swiper-button-prev"></div>
+	</section>
+
+	<script>
+		var mySwiper = new Swiper ('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			hashNavigation: {
+				replaceState: true,
+				watchState: true,
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'progressbar',
+			},
+			simulateTouch: false
+		})
+	</script>
+	
+	<script src="js/functions.js"></script>
+</body>
+<!-- Credits: Audioplayer code, thanks to: http://alexkatz.me/posts/building-a-custom-html5-audio-player-with-javascript/ -->
+</html>
